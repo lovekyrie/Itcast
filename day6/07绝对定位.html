@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>绝对定位absolute</title>
+	<style>
+		
+		body{
+			height: 2000px;
+		}
+
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: pink;
+		}
+
+		.top{
+			position: absolute; /*跟浮动一样，不占位置*/
+			bottom: 0;
+			right: 0;
+		}
+
+		.bottom{
+			background-color: purple;
+			width: 110px;
+		}
+	</style>
+</head>
+<body>
+	<div class="top"></div>
+	<div class="bottom"></div>
+</body>
+</html>

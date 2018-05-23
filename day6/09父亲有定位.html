@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>absolute之父亲有定位</title>
+    <style>
+    .grandpa{
+        width: 500px;
+        height: 500px;
+        background-color: blue;
+        position: absolute; /*如果爷爷有定位，此时不会出现外边距合并(塌陷)的情况，因为爷爷是相对于body定位的，所以在浏览器左上角开始..*/
+    }
+
+    .father {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        margin: 100px;
+        /*position: absolute;*/
+    }
+
+    .son {
+        width: 100px;
+        height: 100px;
+        background-color: purple;
+        position: absolute; /*以最近的父亲为准，如果父亲没有定位，则以爷爷为准，逐层往上找，直到找不到为止*/
+        top: 50px;
+        left: 50px;
+    }
+    </style>
+</head>
+
+<body>
+  <div class="grandpa">
+    <div class="father">
+        <div class="son"></div>
+    </div>
+  </div>
+</body>
+
+</html>

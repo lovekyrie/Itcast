@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>z-index叠放次序</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            position: absolute;
+        }
+        
+        .pink{
+            z-index: 1; /*不能加单位，默认是0，只有定位的（relative,absolute,fixed）元素才能设置该属性*/
+        }
+        .blue{
+            background-color: blue;
+            z-index: 2;
+            margin-top: 50px;
+            margin-left:50px;
+        }
+
+        .green{
+            background-color: green;
+            z-index: 999;
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="pink"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+</body>
+</html>

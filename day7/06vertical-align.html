@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vertical-align</title>
+    <style>
+        img{
+           /* vertical-align: top;
+            border:0;*/
+            display: block;
+        }
+
+        div{
+            border: 2px solid #f00;
+        }
+    </style>
+</head>
+<body>
+    <!-- 边框包围着元素的时候  图片默认跟文字的baseline对齐，base距离底线还有距离。所以会有3px-->
+    <!-- 两种解决方案。一种设置图片与文字的对齐方式(除了baseline,可middle,top),第二种就是设置图片为块级元素 -->
+    <!-- vertical-align 主要用于控制图片/表单与文字的对齐方式 主要作用于行业块元素和行内元素-->
+    <div>
+        <img src="images/qiwei.jpg" alt=""> 
+        my name is qiangqiang
+    </div>
+   
+</body>
+</html>

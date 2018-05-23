@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#ya{ /*权重：0,1,0,0*/
+			color: blue;
+		}
+
+		.yase{ /*类选择器权重 高于标签选择器 权重：0,0,1,0*/
+			color: green;
+		}
+
+		div{ /*权重：0,0,0,1*/
+			color: red;
+		}
+
+		*{
+			/*0,0,0,0*/
+		}
+	</style>
+</head>
+<body>
+	<div class="yase" id="ya" style="color: orange">
+		亚瑟
+	</div>
+</body>
+</html>

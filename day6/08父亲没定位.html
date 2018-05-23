@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>absolute之父亲没定位</title>
+	<style>
+		.father{
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+			margin: 100px;
+		}
+
+		.son{
+			width: 100px;
+			height: 100px;
+			background-color: purple;
+			position: absolute; /* 若父亲没有定位，则子元素始终以浏览器的左上角为标准*/
+			top: 50px;
+			left: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>子代选择器</title>
+	<style>
+		/*需求，要一级菜单改为蓝色*/
+		ul li a{ /*后代选择器，所有后代的意思 常用*/
+			color: red;
+		}
+
+		ul li>a{ /*子代选择器 ，子指的是亲儿子*/
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>
+			<a href="#">一级菜单</a>
+			<div>
+				<a href="#">二级菜单</a>
+				<a href="#">二级菜单</a>
+				<a href="#">二级菜单</a>
+			</div>
+		</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>内边距案例定位</title>
+	<style>
+		/*1.padding*/
+		/*	.box-f{
+			width: 200px;
+			height: 200px;
+			padding-left: 100px;
+			padding-top:100px ;
+			background-color: #37E411;
+		}
+
+		.box-c{
+			width: 100px;
+			height: 100px;
+			background-color: #EE0E0E;
+		}*/
+
+		/*2.relative*/
+		/*.box-f{
+			width: 300px;
+			height: 300px;
+			background-color: #37E411;
+		}
+
+		.box-c{
+			position: relative;
+			width: 100px;
+			height: 100px;
+			top: 100px;
+			left: 100px;
+			background-color: #EE0E0E;
+		}
+		*/
+
+		/*3.absolute*/
+		.box-f{
+			position: relative;
+			width: 300px;
+			height: 300px;
+			background-color: #37E411;
+		}
+
+		.box-c{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			top: 100px;
+			left: 100px;
+			background-color: #EE0E0E;
+		}
+	</style>
+</head>
+<body>
+	<div class="box-f">
+		<div class="box-c">123</div>
+	</div>
+</body>
+</html>

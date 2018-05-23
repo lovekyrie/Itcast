@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>单元格合并</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		p{
+			width: 400px;
+			color: red;
+			background-color: #ccc;
+		}
+	</style>
+</head>
+<body>
+	<!-- 先确定跨行还是跨列 合并规则是从上坐下 从左往右 最后删除被合并的单元格-->
+	<table width="400" height="100" border="1" >
+		<tr>
+			<td>123</td>
+			<td>abc</td>
+			<td>123</td>
+		</tr>
+		<tr>
+			<td>abc</td>
+			<td>123</td>
+			<td>abc</td>
+		</tr>
+		<tr>
+			<td>123</td>
+			<td colspan="2">abc</td>
+		</tr>
+	</table>
+		<p>1.跨列合并</p>
+		<p>2.合并规则</p>
+		<p>3.删除多余的单元格</p>
+	<table width="400" height="100" border="1" >
+		<tr>
+			<td>123</td>
+			<td>abc</td>
+			<td rowspan="3">123</td>
+		</tr>
+		<tr>
+			<td>abc</td>
+			<td>123</td>
+		</tr>
+		<tr>
+			<td>123</td>
+			<td>abc</td>
+		</tr>
+		
+	</table>
+		<p>1.跨行合并</p>
+		<p>2.合并规则</p>
+		<p>3.删除多余的单元格，第二行的第三列和第三行的第三列</p>
+</body>
+</html>

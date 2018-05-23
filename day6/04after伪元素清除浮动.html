@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>after伪元素清除浮动</title>
+	<style>
+		.clearfix:after {
+			content: "";
+			display: block;
+			height: 0;
+			clear: both;
+			visibility: hidden;
+		}
+
+		.clearfix{
+			*zoom:1;/* zoom 1就是ie6 清除浮动方式 * ie7以下版本识别*/
+		}
+		.father{
+			border: 1px solid #000;
+			width: 400px;
+		}
+
+		.father .big{
+			float: left;
+			width: 100px;
+			height: 100px;
+			background-color: red;
+		}
+
+		.father .small{
+			float: left;
+			width: 80px;
+			height: 180px;
+			background-color: purple;
+		} 
+		
+		.footer{
+			width: 400px;
+			height: 100px;
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+	 <div class="father clearfix">
+		<div class="big"></div>
+		<div class="small"></div>
+	</div>
+	<div class="footer"></div>
+</body>
+</html>

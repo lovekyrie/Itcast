@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>内边距</title>
+	<style>
+		div{
+			height: 200px;
+			width: 200px;
+			border: 1px solid #000;
+			padding: 10px;
+		}
+
+		a{
+			height: 35px;
+			display: inline-block;
+			background-color: #ccc;
+			color: #fff;
+			line-height: 35px;
+			text-decoration: none;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		首先，如果它的父元素设置了除static之外的定位，比如position:realtive,或者position:absolute以及position:fixed
+那么它就会相当于他的父元素定位，位置通过left,top,right,bottom属性来规定，如果它的父元素没有设置
+	</div>
+	<a href="#">首页</a>
+	<a href="#">尊贵的QQ会员</a>
+
+</body>
+</html>

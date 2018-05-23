@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>外边距塌陷</title>
+	<link rel="stylesheet" href="">
+	<style>
+		.father{
+			width: 500px;
+			height: 500px;
+			background-color: pink;
+			/*padding-top: 1px;*/ /*第一种解决方法 使用padding*/
+			/*border: 1px solid #000;*/ /*第二种 使用border*/
+			overflow: hidden;
+		}
+
+		.son{
+			margin-top: 50px;
+			width: 200px;
+			height: 200px;
+			background-color: yellowgreen;
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son"></div>
+	</div>
+</body>
+</html>

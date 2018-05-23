@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>元素display相互转换</title>
+	<style>
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+		}
+
+		span{
+			display: block;
+			width: 150px;
+			height: 150px;
+			background-color: green;
+		}
+
+		a{
+			display: inline-block;
+			width: 80px;
+			height: 20px;
+			background-color: skyblue;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}
+
+		a:hover{
+			background-color: orange;
+		}
+	</style>
+</head>
+<body>
+	<div>div给定100*100的红色盒子</div>
+	<div>div给定100*100的红色盒子</div>
+	<div>div给定100*100的红色盒子</div>
+	<span>要求150*150的绿色盒子</span>
+	<span>要求150*150的绿色盒子</span>
+	<span>要求150*150的绿色盒子</span>
+	<a href="#">80*20蓝色盒子</a>
+	<a href="#">80*20蓝色盒子</a>
+	<a href="#">80*20蓝色盒子</a>
+</body>
+</html>

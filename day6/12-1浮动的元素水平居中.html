@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动的元素水平居中</title>
+    <style>
+
+        body{
+            height: 100%;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            float: left;
+            background-color: pink;
+            position: relative;
+            left: 50%;
+            margin-left: -100px;
+            top: 50%; /*如果父亲没有设置高度的时候，则不能使用percentage,只能使用像素*/
+            margin-top: -100px;
+        }
+    </style>
+</head>
+<body>
+    <div>123</div>
+</body>
+</html>

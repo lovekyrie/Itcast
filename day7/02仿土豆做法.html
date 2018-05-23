@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>仿土豆做法</title>
+    <style>
+        a{
+            display: block;
+            width: 448px;
+            height: 252px;
+            position: relative;
+
+        }
+
+        .mask{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: rgba(0,0,0,.3) url(images/sidebar-icon.png) no-repeat center;
+            display: none;
+        }
+
+        a:hover .mask{ /*鼠标经过a，然后a里面的mask显示出来*/
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">
+        <img src="images/qiwei.jpg" alt="">
+        <div class="mask"></div>
+    </a>
+</body>
+</html> 

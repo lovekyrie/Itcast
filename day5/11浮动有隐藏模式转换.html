@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动有隐藏模式转换</title>
+	<style>
+		div{
+			height: 100px;
+			background-color: pink;
+			float: left; /*默认转换为行内块元素的特性*/
+		}
+
+		span{
+			width: 100px;
+			height: 100px;
+			background-color: purple;
+			display: block; /*浮动的元素不会遮住块级元素的内容*/
+			/*float: left;*/ /*妙用，如果把一个行业元素设置成浮动了，不在需要display转换，就能设置宽高*/
+		}
+	</style>
+</head>
+<body>
+	<div>大大的</div>
+	<span>12312312324</span>
+</body>
+</html>

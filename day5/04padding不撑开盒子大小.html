@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>padding不撑开盒子大小情况</title>
+	<link rel="stylesheet" href="">
+	<style>
+		.father{
+			width: 300px;
+			height: 100px;
+			background-color: yellowgreen;
+			/*padding-left: 30px;*/
+		}
+		.son{
+			/*width: 300px;*/
+			background-color: yellow;
+			padding-left: 30px; /*当padding的宽度继承而来的时候，设置padding怎么不会撑开盒子宽度*/
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son">123</div>
+	</div>
+</body>
+</html>

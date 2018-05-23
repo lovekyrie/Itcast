@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册页面-表单域</title>
+	<style>
+	/*内部样式表*/
+		tr{
+			height: 40px;
+		}
+	</style>
+</head>
+<body>
+	<table width="600" border="0" cellspacing="0" cellpadding="0" align="center">
+		<caption><h4 style="color: pink; font-size: 25px;">青春不常在，抓紧谈恋爱</h4></caption>
+		<tr>
+			<td>性别</td>
+			<td>
+				男<input type="radio" name="sex" />
+				女<input type="radio" name="sex" />
+			</td>
+		</tr>
+		<tr>
+			<td>生日</td>
+			<td>
+				<select name="year" id="">
+					<option value="">请选择年</option>
+					<option value="1991">1991年</option>
+					<option value="1992">1992年</option>
+					<option value="1993">1993年</option>
+				</select>
+				<select name="month" id="">
+					<option value="">请选择月</option>
+					<option value="1">01月</option>
+					<option value="2">02月</option>
+					<option value="3">03月</option>
+				</select>
+				<select name="day" id="">
+					<option value="">请选择日</option>
+					<option value="1">01日</option>
+					<option value="2">02日</option>
+					<option value="3">03日</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>所在地区</td>
+			<td>
+				<input type="text" placeholder="北京">
+			</td>
+		</tr>
+		<tr>
+			<td>婚姻状况</td>
+			<td>
+				未婚<input type="radio" name="marriage" />
+				离婚<input type="radio" name="marriage" />
+				丧偶<input type="radio" name="marriage" />
+			</td>
+		</tr>
+		<tr>
+			<td>学历</td>
+			<td>
+				<input type="text" placeholder="小学" />
+			</td>
+		</tr>
+		<tr>
+			<td>月薪</td>
+			<td>
+				<input type="text" placeholder="5000-10000" />
+			</td>
+		</tr>
+		<tr>
+			<td>手机号</td>
+			<td>
+				<input type="text" />
+			</td>
+		</tr>
+		<tr>
+			<td>昵称</td>
+			<td>
+				<input type="text" />
+			</td>
+		</tr>
+		<tr>
+			<td>喜欢的类型</td>
+			<td>
+				妩媚<input type="checkbox" name="interesting">
+				柔美<input type="checkbox" name="interesting">
+				可爱<input type="checkbox" name="interesting">
+				小鲜肉<input type="checkbox" name="interesting">
+				型男<input type="checkbox" name="interesting">
+				气质<input type="checkbox" name="interesting">
+			</td>
+		</tr>
+		<tr>
+			<td>自我介绍</td>
+			<td>
+				<textarea name="" id="" cols="40" rows="10"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<input type="image" src="im.jpg">
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<input type="checkbox" checked="checked">我同意注册条款和会员加入标准
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<a href="#">我是会员，立即登录</a>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<h4>我承诺</h4>
+				<ul>
+					<li>年满18岁、单身</li>
+					<li>抱着严肃的态度</li>
+					<li>真诚寻找另一半</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

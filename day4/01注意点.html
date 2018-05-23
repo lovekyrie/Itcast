@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{ /*块级元素水平居中*/
+			height: 100px;
+			background-color: pink;
+			text-align: center; /*文字水平居中*/
+		}
+	</style>
+</head>
+<body>
+	<div>
+		文字居中
+	</div>
+
+	<p> 段落 文字组成的 文字类块级元素 里面不能放其他块级元素</p>
+	<h1>文字</h1>
+
+	<!-- 这种情况不存在，在页面会自动补充上面下面的P标签 -->
+	<p>
+		<div>
+			123
+		</div>
+	</p>
+
+	<a href="">
+		123
+		<a href="#">这又是另外一个链接</a>
+	</a>
+</body>
+</html>

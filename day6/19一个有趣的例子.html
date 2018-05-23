@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>一个有趣的例子</title>
+    <style>
+        div{
+            width: 240px;
+            height: 480px;
+            border: 1px solid #000;
+            float: left;
+            margin-left: -1px; /*设置了边框的压盖效果时，当hover前面4个div的时候，border-right会被遮住，这时候可以设置relative,让他高于标准流*/
+            position: relative; /*当元素已经存在定位的时候，可以用z-index来突出hover的边框效果*/
+        }
+
+        div:hover{
+            border: 1px solid #f40;
+             /*position: relative;*/
+             z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

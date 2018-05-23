@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>外边距合并</title>
+	<style>
+		div{
+			margin-bottom: 100px;
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+		}
+
+		.xionger{
+			margin-top: 150px;
+			background-color: purple; /*最终两个盒子之间的距离，为较大的那个。这种情况无法解决，应该避免*/
+		}
+	</style>
+</head>
+<body>
+	<div class="xiongda">1</div>
+	<div class="xionger">2</div>
+</body>
+</html>

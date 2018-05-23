@@ -1,0 +1,94 @@
+/*顶部导航栏*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #fefefe;
+	height: 3000px;
+}
+
+ul{
+	list-style: none; /*去掉li的小点*/
+}
+
+.header{
+	height: 100px;
+	background-color: #fefefe;
+}
+
+.header .inner{
+	width: 1200px;
+	height: 100px;
+	/*background-color: pink;*/
+	margin: 0 auto;
+	line-height: 100px;
+	font-size: 14px;
+}
+
+.logo{
+	float: left;
+	height: 100px;
+}
+
+.nav{
+	float: right;
+}
+
+.nav li{
+	float:  left;
+	margin: 0 20px;
+}
+
+.nav li a{
+	color: #333;
+	text-decoration: none;
+}
+
+.nav li a:hover{
+	color: #2288f6;
+}
+
+/*banner START*/
+
+.banner{
+	height: 420px;
+	background: url("../images/banner_03.jpg") no-repeat top center;
+}
+
+/*banner END*/
+
+/*service START*/
+
+.service{
+	width: 1055px;
+	margin: 75px auto 0;
+	height: 660px;
+	/*background-color: pink;*/
+}
+
+.service .service-hd{
+	border-top: 1px solid #ccc;
+	margin: 0 25px;
+}
+
+
+.service-hd h3{
+	width: 168px;
+	height: 46px;
+	margin: 0 auto;
+	margin-top:-23px ;
+}
+
+.service-hd p{
+	font-size: 12px;
+	color: #666;
+	line-height: 26px;
+	width: 863px;
+	margin: 15px auto 0;
+	text-align: center;
+}
+
+/*service END*/
+

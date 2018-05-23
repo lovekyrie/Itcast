@@ -1,0 +1,160 @@
+ 
+.w{
+    width: 1190px;
+    margin: auto;
+}
+
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
+
+.red-style{
+    color: #f10215!important;
+}
+
+li{
+    list-style: none;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?7kkyc2');
+    src: url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+    url('../fonts/icomoon.woff?7kkyc2') format('woff'),
+    url('../fonts/icomoon.woff?7kkyc2') format('svg');
+    font-weight: weight;
+    font-style: normal;
+}
+
+/*京东 顶部 start*/
+/*孩子给了高度，父亲不再需要高度。孩子会撑开父亲。*/
+.J_event{
+    background-color: #1686F6;
+}
+
+.J_event a{
+    display: block;
+    height: 80px;
+    background: url(../images/top.jpg) no-repeat;
+    position: relative;
+}
+
+.iconfont{
+    font-style: normal;
+    font-family: "icomoon"; 
+    font-size: 14px;
+}
+
+.J_event a i{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 14px;
+    color: #fff;
+    background-color: rgba(45,45,45);
+    opacity: 0.3;
+    text-align: center;
+    line-height: 20px;
+}
+/*京东 顶部 end*/
+
+/*快捷导航模块 start*/
+.shortcut{
+    height: 30px;
+    background-color: #e3e4e5;
+    border-bottom: 1px solid #dddddd;
+    font-size: 12px;
+    color: #999999;
+    line-height: 30px;
+}
+
+.shortcut .fl li{
+    margin-left: 200px;
+}
+
+.shortcut .fr li{
+    float: left;
+
+}
+
+.shortcut .fr a{
+    color:  #999999;
+    text-decoration: none;
+}
+
+.spacer{
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+    margin: 11px 5px 0;
+}
+
+.shortcut .dt{
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+#ttbar-login{
+    margin-right: 8px;
+
+}
+
+.fr .cw-icon{
+    padding-right: 20px!important;
+}
+
+.cw-icon{
+    height: 28px;
+    line-height: 28px;
+}
+
+.shortcut .cw-icon{
+    overflow: hidden;
+    position: relative;
+    float: left;
+    border: 1px solid #e3e4e5;
+    z-index: 1;
+}
+
+.fr .iconfont{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+}
+
+.qrcode{
+    width: 60px;
+    height: 60px;
+    padding: 3px;
+    position: absolute;
+    left: -2px;
+    top: 30px;
+    border: 1px solid #ccc;
+}
+/*快捷导航模块 end*/
+
+/*header part start*/
+.header{
+    height: 140px;    
+}
+
+.inner{
+    height: 140px;
+    background-color: pink;
+}
+/*header part start*/
